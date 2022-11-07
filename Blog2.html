@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blog 2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&display=swap" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "", sans-serif}
+</style>
+</head>
+<body style="background-color: lightyellow;" class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1 style="font-family: 'Abril Fatface', cursive;"><b>DUC'S BLOG</b></h1>
+
+  
+  <p style="font-family: 'Lato', sans-serif;">Welcome to the blog of <span class="w3-tag" style="font-weight: bold;">Travel</span></p>
+</header>
+
+<video style="width: 1500px; padding-right:  100px;" autoplay muted loop id="myVideo">
+  <source src="E:\2022 - FALL\Web Design - Mrs Shruthi\ASS 2\nature.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1 style="text-align: center; font-weight: bold; font-family: 'Abril Fatface', cursive; color: ;">This is my demo traveling video</h1>
+  <p style="text-align: center; margin-right: 330px; margin-left: 330px; font-family: 'Lato', sans-serif;" >My own practical experiences are also very curious and stimulating for readers. Everyone will be interested in this place, whether the other dish is  as attractive as the rumor or not. Therefore, this type of article is also very diverse in content to write such as cultural experiences, food, games, etc. If you are a storyteller, this is a very good way for you to create a unique style for yourself.</p>
+  <!- button id="myBtn" style="margin-left: 660px;" onclick="myFunction()" -->
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+<video autoplay muted loop id="myVideo">
+  <source src="rain.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="https://images.unsplash.com/photo-1615412704911-55d589229864?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1882&q=80" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3 style="color: ;font-family: 'Abril Fatface', cursive;"><b>TRAVEL ALL AROUND THE WORLD</b></h3>
+      <h5 style="font-weight:bold; font-family: Lato">The bubbles in Acadia National Park, <span class="w3-opacity"><br>March 11st, 2022</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>For many people, The North and South Bubbles are synonymous with a visit to Jordan Pond in Acadia National Park. They are so prominent on the northern horizon and reflected on the surface of the pond that they rule the visual terrain. <span id="dots">...</span><span id="more">
+
+The North Bubble, which you see as the left mountain in the photograph to the right, has the highest elevation at 872 feet. The South Bubble follows at 766 feet.</span></p>
+
+<button onclick="myFunction()" id="myBtn">Read more</button>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="https://images.unsplash.com/photo-1649246479356-2914d6870c71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3 style="font-family: 'Abril Fatface', cursive;"><b>PHU QUOC  </b></h3>
+      <h5 style="font-weight:bold; font-family: Lato">The Largest Island in Vietnam <span class="w3-opacity"><br> August 3rd, 2021</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Phú Quốc (Vietnamese: [fǔ kǔə̯k]) is the largest island in Vietnam. Phú Quốc and nearby islands, along with the distant Thổ Chu Islands, are part of Kiên Giang Province as Phú Quốc City, the island has a total area of 574 km2 (222 sq mi) and a permanent population of approximately 179,480 people. Located in the Gulf of Thailand, the island city of Phú Quốc includes the island proper and 21 smaller islets.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="https://yt3.ggpht.com/HfoOZ2uRkRFqyupOFBB2J-IkOju_9b7BF_-I0v3lonHy6yUh7rwyy2XFgPguI4LB95aHkmwHCg=s900-c-k-c0x00ffffff-no-rj" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4 style="font-family: 'Abril Fatface', cursive;"><b>ABOUT ME</b></h4>
+      <p style="font-family: 'Lato'">My name is Nguyen Xuan Duc, exploring the universe of uknownment. My hobbies are travelling, listening to music and reading story books. My aim is to get a good job in well-known company and support my family. That’s all about me.</p>
+    </div>
+  </div><hr>
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4 style="font-family: 'Abril Fatface', cursive;">Popular Posts</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="https://itravel88.com/wp-content/uploads/2021/05/2-Copy.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large" style="font-weight: bolder">Itinerary, my own schedule</span><br>
+        <span style="font-weight: lighter;">April 10th, 2021</span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="https://itravel88.com/wp-content/uploads/2021/07/9.-Bao-tang-nghe-thuat-kuala-lumpur-1.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large" style="font-weight: bolder">
+Experience, travel guide</span><br>
+        <span style="font-weight: lighter">September 15th, 2021</span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="https://itravel88.com/wp-content/uploads/2021/06/6.IMG_1743.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large" style="font-weight: bolder">Top list post format</span><br>
+        <span style="font-weight: lighter">November 1st, 2021</span>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="https://itravel88.com/wp-content/uploads/2021/06/1.IMG_1242.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large" style="font-weight:bolder" ">Instructional articles</span><br>
+        <span style="font-weight: lighter">December 22nd, 2021</span>
+      </li>  
+      <button style="color: black; font-weight: bold; margin-top: 10px; margin-left: 10px; margin-bottom: 10px; margin-right: 10px;" class="button"><span class="link-btn-chill light-orange" onclick="window.open('')">See more </span></button>
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4 style="font-family: 'Abril Fatface', cursive;">Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Vietnam</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Thailand</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Saigon</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ho Chi Minh</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Singapo</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Can Tho</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Da nang</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Da Lat</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Thai Binh</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Philippin </span>
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-blue-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom"> Next > </button> <br><br><br>
+  
+
+  <a href="https://www.facebook.com/ducnx.247">
+<br><br><br><img src="https://img.icons8.com/color/344/facebook-new.png" alt="https://www.facebook.com/ducnx.247" style="width:66px;height:66px; margin-left:699px;">
+</a>
+
+<a href="https://www.instagram.com/ducnx.247/">
+<img src="https://img.icons8.com/color/344/instagram-new--v2.png" alt="https://www.instagram.com/nxduc247/" style="width:66px;height:66px;">
+</a>
+
+<a href="https://www.youtube.com/channel/UC4mro8tnxaIbT9b9cGnyexg">
+<img src="https://img.icons8.com/color/344/youtube-play.png" alt="https://www.youtube.com/channel/UC4mro8tnxaIbT9b9cGnyexg" style="width:66px;height:66px;">
+</a>
+
+<a href="https://www.behance.net/ducnguyen247">
+<img src="https://img.icons8.com/color/344/behance.png" alt="https://www.behance.net/ducnguyen247" style="width:66px;height:66px;">
+
+<p style="text-align: center;  padding-top: 30px; padding-bottom: 30px; font-family: 'Abril Fatface', cursive; color: floralwhite; font-size: 20px; font-weight: lighter;">Designed by  <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Xuan Duc</a></p>
+
+</a>
+</footer>
+
+</body>
+</html>
